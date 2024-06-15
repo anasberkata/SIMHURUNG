@@ -12,7 +12,7 @@ if (isset($_POST["ubah_link"])) {
     } else {
         echo "<script>
                 alert('Link gagal di ubah');
-                document.location.href = 'index_edit.php';
+                document.location.href = 'index.php';
             </script>";
     }
 }
@@ -35,12 +35,14 @@ if (isset($_POST["ubah_link"])) {
                     <label>Link</label>
                     <input type="text" class="form-control my-2" name="link" value="<?= $live["link"] ?>">
                     <button type="submit" name="ubah_link" class="btn btn-primary w-100">Simpan</button>
+                    <a href="<?= $live["link"] ?>" class="btn btn-dark w-100 mt-3" target="_blank">Live Streaming</a>
                 </form>
             </div>
+
         </div>
     </div>
 
-    <div class="col-xl-6 col-xxl-7">
+    <!-- <div class="col-xl-6 col-xxl-7">
         <div class="card flex-fill w-100">
             <div class="card-header">
                 <h5 class="card-title mb-0">Live Monitoring</h5>
@@ -58,7 +60,7 @@ if (isset($_POST["ubah_link"])) {
 
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 
